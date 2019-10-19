@@ -9,9 +9,10 @@ consumer.subscriptions.create("RoomChannel", {
   disconnected() {
     // Called when the subscription has been terminated by the server
   },
-
-  $('#msg').append('')
+  
   received(data) {
+
+    $('#message_holder').append('<div class="message">' + data.content + '</div>')
     console.log(data)
     // Called when there's incoming data on the websocket for this channel
   }
