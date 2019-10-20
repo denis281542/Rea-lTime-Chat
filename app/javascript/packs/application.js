@@ -20,3 +20,5 @@ require("channels")
 $(document).on('turbolinks:load', function () {
   console.log('yiha, we are ready!')
 })
+require("trix")
+require("@rails/actiontext")
