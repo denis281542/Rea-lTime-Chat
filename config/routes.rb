@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :posts
   resources :messages, only: [:new, :create]
   get 'landing/index'
   root 'landing#index'
