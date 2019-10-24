@@ -12,11 +12,5 @@
 
 <%= @post.content %>
 
-<%= form_with model: @message do |f| %>
-  <%= f.text_field :room_channel %>
-
-  <%= f.submit "Create" %>
-<% end %>
-
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>
