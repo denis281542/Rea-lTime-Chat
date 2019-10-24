@@ -11,7 +11,7 @@
 </p>
 
 <div style="width: 400px; height: auto;">
-  <%= image_tag(@post.content, style:'100%') %>
+  <%= link_to image_tag(@post.content, style:'100%') %>
 </div>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
